@@ -52,4 +52,4 @@ requiredData$Activity <- activityNames[requiredData$Activity]
 library(plyr)
 tidy = ddply(requiredData, c("Subject_ID","Activity"), numcolwise(mean))
 names(tidy)[-c(1,2)] <- paste0("Mean", names(tidy)[-c(1,2)])
-write.table(tidy, file = "tidyData.txt")
+write.table(tidy, file = "tidyData.txt", row.names = FALSE)
