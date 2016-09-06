@@ -1,4 +1,6 @@
 
+# Please make sure your working directory is set the directory containing the UCI HAR Dataset. See README.txt.
+
 # Getting the training data and test data.
 # Adding the corresponding columns "subject ID" and "Activity" to the training data and test data.
 # Rowbinding training and test data.
@@ -31,6 +33,7 @@ requiredData <- completeData[,requiredColumns]
 # "-mean()-" becomes "Mean" and "-std()" becomes"Std".
 # The time and frequency indicators have been written in full.
 # Removed the typo "BodyBody" in the original data set.
+# Removed the parentheses from the variable names.
 requiredColumnsChar <- grep(".*mean.*|.*std.*|.*Subject.*|.*Activity.*",completeDataColNames, value=TRUE)
 requiredColumnsChar <- gsub("-mean\\(\\)","Mean",requiredColumnsChar)
 requiredColumnsChar <- gsub("-std\\(\\)","Std",requiredColumnsChar)
