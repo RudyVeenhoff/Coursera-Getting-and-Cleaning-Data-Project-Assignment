@@ -5,11 +5,12 @@
   * __Subject_ID__: Integer variable between 1 and 30 representing the subject's ID.
   * __Activity__: Character variable describing the activity. The 6 activities are:
     * Walking
-    * Walking UPstairs
+    * Walking Upstairs
     * Walking Downstairs
     * Laying
     * Sitting
     * Standing
+
 ## Meaurement means
 The next 79 variables are numerics between -1 and 1. They represent the mean of a subject's activity for different measured features.
   * MeanTimeBodyAccMean-X
